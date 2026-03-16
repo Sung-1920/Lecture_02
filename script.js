@@ -28,5 +28,3 @@ console.log(roundNumber(19.99))
 console.log(roundNumber(20.5))
 
 // სავარჟიშო #4
-
-// test
