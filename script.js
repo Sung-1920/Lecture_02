@@ -28,3 +28,18 @@ console.log(roundNumber(19.99))
 console.log(roundNumber(20.5))
 
 // სავარჟიშო #4
+
+function roundNumber(num, roundUp) {
+    return roundUp ? Math.ceil(num) : Math.floor(num);
+}
+
+console.log(roundNumber(4.3, true));
+console.log(roundNumber(4.8, false));
+
+// სავარჟიშო #5
+
+function randomNumber() {
+    console.log(Math.random());
+}
+
+randomNumber();
