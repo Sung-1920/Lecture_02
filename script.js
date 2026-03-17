@@ -43,3 +43,41 @@ function randomNumber() {
 }
 
 randomNumber();
+
+// სავარჯიშო #6
+
+function randomNumbers() {
+    let num = Math.random() * (50 - 5) + 5;
+    console.log(num);
+}
+
+randomNumbers();
+
+// სავარჯიშო #7
+
+function randomBetween(a, b) {
+    let num = Math.random() * (b - a) + a;
+    console.log(num);
+}
+
+randomBetween(5, 10);
+
+// სავარჯიშო #8
+
+function randomIntBetween(a, b) {
+    let num = Math.floor(Math.random() * (b - a + 1)) + a;
+    console.log(num);
+}
+
+randomIntBetween(5, 10);
+
+// // სავარჯიშო #9
+
+function randomTenNumbers(a, b) {
+    for (let i = 0; i < 10; i++) {
+        let num = Math.floor(Math.random() * (b - a + 1)) + a;
+        console.log(num);
+    }
+}
+
+randomTenNumbers(1, 100)
