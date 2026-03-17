@@ -71,7 +71,7 @@ function randomIntBetween(a, b) {
 
 randomIntBetween(5, 10);
 
-// // სავარჯიშო #9
+// სავარჯიშო #9
 
 function randomTenNumbers(a, b) {
     for (let i = 0; i < 10; i++) {
@@ -81,3 +81,27 @@ function randomTenNumbers(a, b) {
 }
 
 randomTenNumbers(1, 100)
+
+//სავარჯიშო #10
+
+function randomNNumbers(n, a, b) {
+    for (let i = 0; i < n; i++) {
+        let num = Math.floor(Math.random() * (b - a + 1)) + a;
+        console.log(num);
+    }
+}
+
+
+randomNNumbers(7, 1, 10)
+
+// სავარჯიშო #11
+
+function weekDays() {
+    let days = ["ორშაბათი", "სამშაბათი", "ოთხშაბათი", "ხუთშაბათი", "პარასკევი", "შაბათი", "კვირა"];
+    
+    let randomIndex = Math.floor(Math.random() * days.length);
+    
+    console.log(days[randomIndex]);
+}
+
+weekDays();
