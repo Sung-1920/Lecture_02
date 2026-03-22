@@ -98,10 +98,162 @@ randomNNumbers(7, 1, 10)
 
 function weekDays() {
     let days = ["ორშაბათი", "სამშაბათი", "ოთხშაბათი", "ხუთშაბათი", "პარასკევი", "შაბათი", "კვირა"];
-    
+
     let randomIndex = Math.floor(Math.random() * days.length);
-    
+
     console.log(days[randomIndex]);
 }
 
 weekDays();
+
+
+// სავარჯიშო #12
+
+function randomPhoto() {
+    let photos = [
+        "photo1.jpg",
+        "photo2.jpg",
+        "photo3.jpg",
+        "photo4.jpg",
+        "photo5.jpg",
+        "photo6.jpg",
+        "photo7.jpg",
+        "photo8.jpg",
+        "photo9.jpg",
+        "photo10.jpg",
+    ];
+
+    let randomIndex = Math.floor(Math.random() * photos.length);
+    console.log(photos[randomIndex]);
+}
+
+randomPhoto();
+
+// სავარჯიშო #13
+
+function randomPhotos() {
+    let photos = [
+        "photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg", "photo5.jpg",
+        "photo6.jpg", "photo7.jpg", "photo8.jpg", "photo9.jpg", "photo10.jpg",
+        "photo11.jpg", "photo12.jpg", "photo13.jpg", "photo14.jpg", "photo15.jpg",
+        "photo16.jpg", "photo17.jpg", "photo18.jpg", "photo19.jpg", "photo20.jpg"
+    ];
+
+    for (let i = 0; i < 4; i++) {
+        let randomIndex = Math.floor(Math.random() * photos.length);
+        console.log(photos[randomIndex]);
+        photos.splice(randomIndex, 1);
+    }
+}
+
+randomPhotos();
+
+// სავარჯიშო #14
+
+function randomDayWithPhoto() {
+    let days = [
+        { day: "ორშაბათი", photo: "mon.jpg" },
+        { day: "სამშაბათი", photo: "tue.jpg" },
+        { day: "ოთხშაბათი", photo: "wed.jpg" },
+        { day: "ხუთშაბათი", photo: "thu.jpg" },
+        { day: "პარასკევი", photo: "fri.jpg" },
+        { day: "შაბათი", photo: "sat.jpg" },
+        { day: "კვირა", photo: "sun.jpg" }
+    ];
+
+    let randomIndex = Math.floor(Math.random() * days.length);
+
+    console.log(days[randomIndex].day);
+    console.log(days[randomIndex].photo);
+}
+
+randomDayWithPhoto();
+
+// სავარჯიშო #15
+
+function randomDaysWithPhotos() {
+    let photos = [
+        "photo1.jpg",
+        "photo2.jpg",
+        "photo3.jpg",
+        "photo4.jpg",
+        "photo5.jpg"
+    ];
+
+    let days = [
+        "ორშაბათი", "სამშაბათი", "ოთხშაბათი",
+        "ხუთშაბათი", "პარასკევი", "შაბათი", "კვირა"
+    ];
+
+    let randomDayIndex = Math.floor(Math.random() * days.length);
+    let randomPhotoIndex = Math.floor(Math.random() * photos.length);
+
+    console.log(days[randomDayIndex]);
+    console.log(photos[randomPhotoIndex]);
+}
+
+randomDaysWithPhotos();
+
+// სავარჯიშო #16
+
+
+function randomMonth() {
+    let month = [
+        "Jan",
+        "Feb",
+        "March",
+        "April",
+        "May",
+        "jun",
+        "jul",
+        "Aug",
+        "Sept",
+        "Oct",
+        "Nov",
+        "Dec",
+    ];
+
+    let randomIndex = Math.floor(Math.random() * month.length);
+    console.log(month[randomIndex]);
+}
+
+randomMonth();
+
+// სავარჯიშო #17
+
+function randomDateWithPhoto() {
+    let photos = [
+        "photo1.jpg","photo2.jpg","photo3.jpg","photo4.jpg","photo5.jpg",
+        "photo6.jpg","photo7.jpg","photo8.jpg","photo9.jpg","photo10.jpg"
+    ];
+
+    let randomDay = Math.floor(Math.random() * 31) + 1;
+    let randomPhotoIndex = Math.floor(Math.random() * photos.length);
+
+    console.log("დღე:", randomDay);
+    console.log("ფოტო:", photos[randomPhotoIndex]);
+}
+
+randomDateWithPhoto();
+
+// სავარჯიშო #17
+
+function tablePhotos() {
+    let photos = [
+        "photo1.jpg","photo2.jpg","photo3.jpg","photo4.jpg","photo5.jpg",
+        "photo6.jpg","photo7.jpg","photo8.jpg","photo9.jpg","photo10.jpg",
+        "photo11.jpg","photo12.jpg","photo13.jpg","photo14.jpg","photo15.jpg",
+        "photo16.jpg","photo17.jpg","photo18.jpg","photo19.jpg","photo20.jpg"
+    ];
+
+    for (let i = 0; i < 3; i++) {
+        let row = "";
+        for (let j = 0; j < 4; j++) {
+            let randomIndex = Math.floor(Math.random() * photos.length);
+            row += photos[randomIndex] + " ";
+        }
+        console.log(row);
+    }
+}
+
+tablePhotos();
